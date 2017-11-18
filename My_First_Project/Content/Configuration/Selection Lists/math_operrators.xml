@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selectionList id="bf40eb7c-25ad-4084-b52c-e41c3578f66c">
+  <descriptionCdata><![CDATA[bf40eb7c-25ad-4084-b52c-e41c3578f66c.description=This for a business requirement for doing simple evaluation 
+]]></descriptionCdata>
+  <annotation>bf40eb7c-25ad-4084-b52c-e41c3578f66c.description</annotation>
+  <name>math_operrators</name>
+  <storage>
+    <string>add</string>
+    <string>mul</string>
+    <string>div</string>
+    <string>sub</string>
+  </storage>
+</selectionList>

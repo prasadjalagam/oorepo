@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<domainTerm id="51c2ba02-7c60-45b8-b10d-cf08ff6610b1">
+  <descriptionCdata><![CDATA[]]></descriptionCdata>
+  <annotation></annotation>
+  <name>DNS</name>
+  <storage>
+    <domainTermValue id="274adfd9-e87f-4e47-a735-747fa870c2ef">
+      <annotation>Global</annotation>
+      <name>ATOS</name>
+    </domainTermValue>
+    <domainTermValue id="2117afd8-3e2c-4742-ace3-87bb30d89b4c">
+      <annotation>Local</annotation>
+      <name>ATOSIND</name>
+    </domainTermValue>
+    <domainTermValue id="f3642a61-e246-42ab-bbe2-85cf73ab2a00">
+      <annotation>US</annotation>
+      <name>ATOSITGLOBAL</name>
+    </domainTermValue>
+  </storage>
+</domainTerm>

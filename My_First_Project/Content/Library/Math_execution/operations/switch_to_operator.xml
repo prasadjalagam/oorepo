@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<operation id="13f309a3-72f8-4375-9623-985a20e090c7">
+  <descriptionCdata><![CDATA[13f309a3-72f8-4375-9623-985a20e090c7.description=<pre>\nThis operation does not do anything. It can be used to filter flow variables by defining them as inputs and filtering them in the Results tab.\n\nInputs\:\n    field1 \u2013 An optional input that can be used for filtering flow variables.\n    field2 \u2013 An optional input that can be used for filtering flow variables.\n    field3 \u2013 An optional input that can be used for filtering flow variables.\n    field4 \u2013 An optional input that can be used for filtering flow variables.\n\nResults\:\n    returnResult - This is the primary output. It contains the value of  "field1" as it was specified at input or when filtered. \n\nResponses\:\n    success - The operation completed as stated in the description.\n</pre>
+]]></descriptionCdata>
+  <annotation>13f309a3-72f8-4375-9623-985a20e090c7.description</annotation>
+  <name>switch_to_operator</name>
+  <categories/>
+  <inputs>
+    <staticBinding id="96a1a3bd-7dea-4a3b-b3ea-0c8becf8042c">
+      <annotation></annotation>
+      <assignFromContext>false</assignFromContext>
+      <assignToContext>false</assignToContext>
+      <inputType>STRING</inputType>
+      <isList>false</isList>
+      <required>false</required>
+      <isPersisted>true</isPersisted>
+      <inputSymbol>Field_1</inputSymbol>
+      <listDelimiter>,</listDelimiter>
+      <value></value>
+      <record>false</record>
+    </staticBinding>
+  </inputs>
+  <scriptlet id="aff7c477-7cdd-4a15-ae3a-5f80f20550b2">
+    <annotation></annotation>
+    <name>Operation switch_to_operator (13f309a3-72f8-4375-9623-985a20e090c7)</name>
+    <script>if (typeof field1 != &apos;undefined&apos;) {
+	scriptletResult = field1;
+} else {
+	scriptletResult = &quot;&quot;;
+} 
+</script>
+    <type>RHINO</type>
+  </scriptlet>
+  <possibleResponses>
+    <opResponse id="ef3496f1-be3e-4e31-8fad-c11673b77ce2">
+      <annotation></annotation>
+      <name>add</name>
+      <isDefault>false</isDefault>
+      <onFailure>false</onFailure>
+      <type>RESOLVED</type>
+      <matchRules>
+        <expression id="f8f72af0-4e33-4a9e-823e-e8273beb11ec">
+          <annotation></annotation>
+          <name>Field_1</name>
+          <fieldName>Field_1</fieldName>
+          <sourceType>RAWRESULT</sourceType>
+          <containsEvaluator id="7bcaf8ad-4076-4000-a0c0-28342315201e">
+            <annotation></annotation>
+            <name>Config Item</name>
+            <text>add</text>
+            <ignoreCase>true</ignoreCase>
+            <matchType>EXACT_MATCH</matchType>
+          </containsEvaluator>
+          <filters/>
+        </expression>
+      </matchRules>
+    </opResponse>
+    <opResponse id="edc60f83-e6e9-45d3-9cd5-b2d2569257ff">
+      <annotation></annotation>
+      <name>mul</name>
+      <isDefault>false</isDefault>
+      <onFailure>false</onFailure>
+      <type>DIAGNOSED</type>
+      <matchRules>
+        <expression id="e4e56d90-2efb-4e03-b062-e4c9b4c8a380">
+          <annotation></annotation>
+          <name>Field_1</name>
+          <fieldName>Field_1</fieldName>
+          <sourceType>RAWRESULT</sourceType>
+          <containsEvaluator id="2ae4cca1-3b8b-4e00-b4e1-595de033fc1e">
+            <annotation></annotation>
+            <name>Config Item</name>
+            <text>mul</text>
+            <ignoreCase>true</ignoreCase>
+            <matchType>EXACT_MATCH</matchType>
+          </containsEvaluator>
+          <filters/>
+        </expression>
+      </matchRules>
+    </opResponse>
+    <opResponse id="fb44f87b-11ba-4cc0-be83-b97b29d4218e">
+      <annotation></annotation>
+      <name>div</name>
+      <isDefault>false</isDefault>
+      <onFailure>false</onFailure>
+      <type>NO_ACTION_TAKEN</type>
+      <matchRules>
+        <expression id="777c6550-8c37-413d-bf6a-b9fbb4b1b6c3">
+          <annotation></annotation>
+          <name>Field_1</name>
+          <fieldName>Field_1</fieldName>
+          <sourceType>RAWRESULT</sourceType>
+          <containsEvaluator id="4e827fc6-0ee6-4e19-a655-d48b7d038752">
+            <annotation></annotation>
+            <name>Config Item</name>
+            <text>div</text>
+            <ignoreCase>true</ignoreCase>
+            <matchType>EXACT_MATCH</matchType>
+          </containsEvaluator>
+          <filters/>
+        </expression>
+      </matchRules>
+    </opResponse>
+    <opResponse id="d649d9d5-f96b-40e2-b2ce-7675762a6a19">
+      <annotation></annotation>
+      <name>sub</name>
+      <isDefault>false</isDefault>
+      <onFailure>false</onFailure>
+      <type>RESOLVED</type>
+      <matchRules>
+        <expression id="69669b54-7a01-447e-930e-4ce2bf84987b">
+          <annotation></annotation>
+          <name>Field_1</name>
+          <fieldName>Field_1</fieldName>
+          <sourceType>RAWRESULT</sourceType>
+          <containsEvaluator id="11cd51e2-e4e6-417d-a404-445a4c64edf2">
+            <annotation></annotation>
+            <name>Config Item</name>
+            <text>sub</text>
+            <ignoreCase>true</ignoreCase>
+            <matchType>EXACT_MATCH</matchType>
+          </containsEvaluator>
+          <filters/>
+        </expression>
+      </matchRules>
+    </opResponse>
+    <opResponse id="207a3d02-0fb5-4eda-8f12-811c73569e33">
+      <annotation></annotation>
+      <name>failure</name>
+      <isDefault>true</isDefault>
+      <onFailure>false</onFailure>
+      <type>ERROR</type>
+      <matchRules/>
+    </opResponse>
+  </possibleResponses>
+  <availableResultExpressions/>
+  <resultExpression id="cbd0190b-92a0-44fb-b683-2f6381d8fc89">
+    <annotation></annotation>
+    <name>returnResult</name>
+    <fieldName>returnResult</fieldName>
+    <sourceType>RAWRESULT</sourceType>
+    <filters/>
+  </resultExpression>
+  <iconSpec id="3e93b3f9-8019-49ac-9361-19393ccc4a6c">
+    <baseIcon>atom.png</baseIcon>
+    <basePath>/Others/</basePath>
+    <readOnly>false</readOnly>
+    <layers/>
+  </iconSpec>
+  <opRef>
+    <refId>ddd79f22-8b1e-4605-88d5-d912bb2da2b9</refId>
+  </opRef>
+  <fieldValues/>
+  <groupAliasRef>
+    <refId>5233030c-af46-432b-a682-b326ca6bf2ae</refId>
+    <refName>RAS_Operator_Path</refName>
+  </groupAliasRef>
+  <overrideGroupAlias>${overrideJRAS}</overrideGroupAlias>
+</operation>

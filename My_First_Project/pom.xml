@@ -5,4 +5,11 @@
   <groupId>DEFAULT</groupId>
   <artifactId>My_First_Project</artifactId>
   <version>1.0.0-SNAPSHOT</version>
+  <dependencies>
+    <dependency>
+      <groupId>DEFAULT</groupId>
+      <artifactId>Base</artifactId>
+      <version>[1.8.0]</version>
+    </dependency>
+  </dependencies>
 </project>
