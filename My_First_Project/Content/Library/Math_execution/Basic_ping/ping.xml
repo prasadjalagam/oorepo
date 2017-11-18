@@ -23,6 +23,19 @@ f0381462-5788-40e1-a4e7-f0ddff30a95d.d74f54e9-541d-4582-b678-c403e07b47fe.prompt
       <value>text</value>
       <record>false</record>
     </staticBinding>
+    <staticBinding id="5e4e5eab-12a6-4ced-96cd-f8e7b80e3ebf">
+      <annotation></annotation>
+      <assignFromContext>false</assignFromContext>
+      <assignToContext>false</assignToContext>
+      <inputType>STRING</inputType>
+      <isList>false</isList>
+      <required>false</required>
+      <isPersisted>true</isPersisted>
+      <inputSymbol>username</inputSymbol>
+      <listDelimiter>,</listDelimiter>
+      <value></value>
+      <record>false</record>
+    </staticBinding>
   </inputs>
   <possibleResponses>
     <opResponse id="8a2319c0-1ec3-453a-a09b-9dd76946415e">
